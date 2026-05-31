@@ -7,9 +7,7 @@ const Form = ({ onAddTask, onClose }) => {
 
   const addingtask = (e) => {
     e.preventDefault();
-    // console.log(e);
-    const id = e.timeStamp;
-    onAddTask({ task, detail, deadline, id });
+    onAddTask({ task, detail, deadline });
   };
 
   return (
